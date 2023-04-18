@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: ['2.1', '2.2']
-        gemfile: [am_5.1]
+        ruby-version: ['2.1']
+        gemfile: [am_3.2]
         channel: [stable]
 
     env:
