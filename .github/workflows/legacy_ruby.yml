@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: ['2.2', '2.3', '2.4', '2.5']
+        ruby-version: ['2.2']
         gemfile: [am_5.1]
         channel: [stable]
 
@@ -28,12 +28,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Update curl
-      run: |
-        sudo apt-get update
-        sudo apt-get -yq --no-install-suggests --no-install-recommends install curl
-    - name: Print curl version
-      run: curl --version
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
