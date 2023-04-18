@@ -34,6 +34,7 @@ appraise 'am-5.1' do
   gem 'activemodel', "~> 5.1.0"
   gem 'activesupport', "~> 5.1.0"
   gem 'dalli', '< 3'
+  gem 'ethon', '< 0.16'
 end
 
 appraise 'am-5.2' do
