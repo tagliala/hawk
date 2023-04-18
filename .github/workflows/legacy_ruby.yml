@@ -28,6 +28,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Update curl
+      run: |
+        sudo apt-get update
+        sudo apt-get -yq --no-install-suggests --no-install-recommends install curl
     - name: Print curl version
       run: curl --version
     - name: Set up Ruby
