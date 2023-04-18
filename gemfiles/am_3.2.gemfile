@@ -6,7 +6,7 @@ gem "activemodel", "~> 3.2.0"
 gem "activesupport", "~> 3.2.0"
 gem "dalli", "< 3"
 
-gem 'webmock', '< 3.15'
+gem 'webmock', '< 3.10'
 gem 'bigdecimal', '< 2'
 gem 'ffi', '< 1.12'
 
